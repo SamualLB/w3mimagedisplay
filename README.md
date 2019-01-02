@@ -1,24 +1,30 @@
-# imgdisplay
+# w3mimagedisplay
 
-TODO: Write a description here
+Tiny Crystal library for using w3mimagedisplay
 
 ## Installation
 
 1. Add the dependency to your `shard.yml`:
 ```yaml
 dependencies:
-  imgdisplay:
-    github: your-github-user/imgdisplay
+  w3mimagedisplay:
+    github: SamualLB/w3mimagedisplay
 ```
 2. Run `shards install`
 
 ## Usage
 
 ```crystal
-require "imgdisplay"
+require "w3mimagedisplay"
 ```
 
 TODO: Write usage instructions here
+
+Run examples from the main project directory
+
+```crystal
+crystal examples/draw_clear.cr
+```
 
 ## Development
 
@@ -34,4 +40,4 @@ TODO: Write development instructions here
 
 ## Contributors
 
-- [Samual Black](https://github.com/your-github-user) - creator and maintainer
+- [Samual Black](https://github.com/SamualLB) - creator and maintainer
