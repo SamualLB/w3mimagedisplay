@@ -1,0 +1,9 @@
+name: imgdisplay
+version: 0.1.0
+
+authors:
+  - Samual Black <samuallb@hotmail.com>
+
+crystal: 0.27.0
+
+license: MIT
