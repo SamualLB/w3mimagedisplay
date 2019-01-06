@@ -7,7 +7,7 @@ Tiny Crystal library for using w3mimagedisplay
 1. Add the dependency to your `shard.yml`:
 ```yaml
 dependencies:
-  w3mimagedisplay:
+  w3m_image_display:
     github: SamualLB/w3mimagedisplay
 ```
 2. Run `shards install`
@@ -15,7 +15,7 @@ dependencies:
 ## Usage
 
 ```crystal
-require "w3mimagedisplay"
+require "w3m_image_display"
 ```
 
 TODO: Write usage instructions here

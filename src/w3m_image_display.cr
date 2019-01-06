@@ -86,8 +86,10 @@ module W3MImageDisplay
 
   # Prevent future images being drawn
   #
+  # Does not seem to work in xterm
+  #
   # TODO: Raise when this is set?
-  def terminate
+  def self.terminate
     proc.input.puts "2;\n"
   end
 end
