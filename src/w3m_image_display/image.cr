@@ -50,12 +50,7 @@ class W3MImageDisplay::Image
 
   # Draw using pixels
   def draw_pixel(x, y, w, h)
-    num : String
-    if @drawn
-      num = "1" # redraw
-    else
-      num = "0" # first draw
-    end
+    num = @drawn ? "1" : "0"
     W3MImageDisplay.proc.input.puts "#{num};#{@index_plus_one};#{x};#{y};#{w};#{h};;;;;#{@path}\n"
     @drawn = true
     @previous_size = {x, y, w, h}
@@ -80,6 +75,6 @@ class W3MImageDisplay::Image
   # Remove the image
   def clear
     return unless (size = @previous_size)
-    W3MImageDisplay.clear(size[0], size[1], size[2], size[3])
+    W3MImageDisplay.clear(*size)
   end
 end
