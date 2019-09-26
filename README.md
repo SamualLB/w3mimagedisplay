@@ -22,7 +22,7 @@ TODO: Write usage instructions here
 
 Run examples from the main project directory
 
-```crystal
+```
 crystal examples/draw_clear.cr
 ```
 

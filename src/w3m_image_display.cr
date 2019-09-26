@@ -1,7 +1,7 @@
 require "./w3m_image_display/*"
 
 module W3MImageDisplay
-  VERSION = "0.1.0"
+  VERSION = "0.1.1"
 
   BINARY_PATHS = ["/usr/lib/w3m/w3mimgdisplay", "/usr/libexec/w3m/w3mimgdisplay", "/usr/lib64/w3m/w3mimgdisplay", "/usr/libexec64/w3m/w3mimgdisplay", "/usr/local/libexec/w3m/w3mimgdisplay"]
 

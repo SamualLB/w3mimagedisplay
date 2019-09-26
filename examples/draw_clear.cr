@@ -1,4 +1,4 @@
-require "../w3m_image_display"
+require "../src/w3m_image_display"
 
 img = W3MImageDisplay::Image.new("examples/image.jpg")
 
