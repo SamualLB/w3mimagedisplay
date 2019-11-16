@@ -65,7 +65,7 @@ module W3MImageDisplay
   def self.font_size : {Int32, Int32}
     pix = pixel_size
     siz = size
-    {(pix[0] + 2) / siz[0], (pix[1] + 2) / siz[1]}
+    {(pix[0] + 2) // siz[0], (pix[1] + 2) // siz[1]}
   end
 
   def self.sync

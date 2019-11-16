@@ -29,20 +29,20 @@ class W3MImageDisplay::Image
     # Resize to original size if needed
     unless stretch
       new_w = w.clamp(0, size_x)
-      x += (w - new_w) / 2 if centre
+      x += (w - new_w) // 2 if centre
       w = new_w
       new_h = h.clamp(0, size_y)
-      y += (h - new_h) / 2 if centre
+      y += (h - new_h) // 2 if centre
       h = new_h
     end
     ratio = size_x.to_f / size_y.to_f
     if h*ratio > w
       new_h = (w.to_f / ratio).to_i
-      y += (h - new_h) / 2 if centre
+      y += (h - new_h) // 2 if centre
       h = new_h
     elsif w/ratio > h
       new_w = (h.to_f * ratio).to_i
-      x += (w - new_w) / 2 if centre
+      x += (w - new_w) // 2 if centre
       w = new_w
     end
     draw_pixel(x, y, w, h)
